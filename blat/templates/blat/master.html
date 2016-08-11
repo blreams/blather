@@ -16,6 +16,7 @@
                     {% if user.profile.blog %}
                         <a href="{{user.profile.blog}}">blog</a>
                     {% endif %}
+                <li><a href="{% url 'newblat' %}">Share a blat</a></li>
                 <li><a href="{% url 'myview' %}">My blats</a></li>
                 <li><a href="{% url 'logout' %}?next=/">Logout</a></li>
             {% else %}
